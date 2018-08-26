@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CSS Variables</title>
+  <link rel="stylesheet" type="text/css" href="./src/styles.css">
+</head>
+<body>
+  <h2>CSS Variables</h2>
+
+  <div class="controls">
+    <label for="border-rad">Image corners</label>
+    <input type="range" min="1" max="50" value="1" name="border-rad" data-suffix="%" id="corner">
+
+    <label for="bg-colour">Background colour</label>
+    <input type="color" min="1" name="bg-color" value="#ff0000" id="bg">
+
+    <label for="img-text">Add some text</label>
+    <input type="text" name="img-text" value="" id="img-text-input">
+
+    <button id="btn" value="show">Show Me</button>
+  </div>
+
+  <div class="flowers-container" id="flowers-container">
+    <img src="./src/lemur.jpg" width="300px" class="image" id="image">
+    <div class="bubble">
+      <p id="image-text" class="image-text"></p>
+    </div>
+  </div>
+
+  <script src="./src/scripts.js"></script>
+</body>
+</html>

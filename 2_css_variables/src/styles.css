@@ -1,0 +1,46 @@
+:root {
+  --bg-color: white;
+  --border-rad: 0px;
+}
+
+.bubble {
+  background: #FFFFFF;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  display: inline-block;
+  height: 120px;
+  margin-top: 10px;
+  padding: 0px;
+  position: relative;
+  vertical-align: top;
+  width: 370px;
+}
+
+.bubble:after {
+  border-color: transparent #FFFFFF;
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  content: '';
+  display: block;
+  left: -15px;
+  position: absolute;
+  top: 45px;
+  width: 0;
+  z-index: 1;
+}
+
+.image-text {
+  font-size: 30px;
+  margin-top: 6px;
+  position: absolute;
+}
+
+img {
+  border-radius: var(--border-rad);
+  display: none;
+}
+
+.flowers-container {
+  background-color: var(--bg-color);
+}
